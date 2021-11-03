@@ -29,9 +29,9 @@ class FavoriteAdapter(
         val txtHowMuch = row.findViewById<TextView>(R.id.txtHowMuch)
         val txtWhat = row.findViewById<TextView>(R.id.txtWhat)
 
-        txtNum.text = data.num
-        txtAge.text = data.birthYear.toString()
-        txtAddress.text = data.address
+        txtNum.text = data.num.toString()
+        txtHowMuch.text = data.howMuch
+        txtWhat.text = data.what
 
         return row
     }
